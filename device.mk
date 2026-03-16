@@ -64,6 +64,7 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 # Touch features
 $(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_GM,true)
+$(call soong_config_set_bool,OPLUS_LINEAGE_TOUCH_HAL,ENABLE_HTPR,false)
 
 # Vibrator
 PRODUCT_PACKAGES += \

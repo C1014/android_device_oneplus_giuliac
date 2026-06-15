@@ -5,4 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_giuliac.mk
+    $(LOCAL_DIR)/matrixx_giuliac.mk
+COMMON_LUNCH_CHOICES := \
+    matrixx_giuliac-user \
+    matrixx_giuliac-userdebug \
+    matrixx_giuliac-eng

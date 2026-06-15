@@ -11,19 +11,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from giuliac device
 $(call inherit-product, device/oneplus/giuliac/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Matrixx stuff.
+$(call inherit-product, vendor/matrixx/config/common_full_phone.mk)
 
-# Lunaris Flags
-LUNARIS_BUILD_TYPE := OFFICIAL
+# Matrixx Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_CUSTOM_UDFPS := true
 TARGET_OPTIMIZED_DEXOPT := true
-TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
 WITH_GMS := true
 WITH_BCR := true
+MATRIXX_MAINTAINER := ZeroSquared
+TARGET_INCLUDE_MATLOG := true
+WITH_EXTRA_GAPPS := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+WITH_GMS_COMMS_SUITE := true
+WITH_GMS_AICORE := true
+SURFACE_FLINGER_BOOST := true
+USE_REALITY_ENGINE := false
+PRODUCT_NO_CAMERA := false
+BYPASS_CHARGE_SUPPORTED := false
 
-PRODUCT_NAME := lineage_giuliac
+PRODUCT_NAME := matrixx_giuliac
 PRODUCT_DEVICE := giuliac
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
